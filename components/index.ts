@@ -8,6 +8,7 @@ import JobContent from './JobContent';
 import Search from './Search';
 import LoginForm from './LoginForm';
 import Pagination from './Pagination'
+import Providers from './Providers';
 
 export {
   Hero,
@@ -19,4 +20,6 @@ export {
   JobContent,
   Search,
   LoginForm,
+  Pagination,
+  Providers,
 }

@@ -1,6 +1,36 @@
 import xm12js from 'xml2js';
 import { JobProps } from '@/types';
 
+export const users = [{
+  id: "1",
+  email: "mishanep@gmail.com",
+  name: "Misha Nep",
+  password: "12345",
+  role: "admin",
+},
+{
+  id: '4',
+  email: 'ilyaptakh@gmail.com',
+  name: 'Illia Pahfkjdhfkj',
+  password: '12345',
+  role: 'admin',
+
+},
+{
+  id: "2",
+  email: "admin@pcgramota.ru",
+  name: "Super Admin",
+  password: "12345",
+  role: "admin",
+},
+{
+  id: "3",
+  email: "any@gmail.com",
+  name: "Just a Guest",
+  password: "12345",
+  role: "guest",
+},]
+
 export async function fetchVacancies(): Promise<JobProps[]> {
   try {
     const response = await fetch('https://devitjobs.uk/job_feed.xml');
