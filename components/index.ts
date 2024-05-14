@@ -9,6 +9,7 @@ import Search from './Search';
 import LoginForm from './LoginForm';
 import Pagination from './Pagination'
 import Providers from './Providers';
+import Loading from './Loading'
 
 export {
   Hero,
@@ -22,4 +23,5 @@ export {
   LoginForm,
   Pagination,
   Providers,
+  Loading,
 }

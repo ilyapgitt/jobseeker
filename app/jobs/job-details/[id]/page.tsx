@@ -5,6 +5,7 @@ import { fetchVacancyById } from '@/utils';
 import { JobProps } from '@/types';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Loading } from '@/components';
 
 const VacancyPage = () => {
   const pathname = usePathname()
@@ -24,8 +25,7 @@ const VacancyPage = () => {
   if (!vacancy) {
     return (
       <main className='mt-24 flex flex-col justify-center'>
-        <h3 className='text-[48px] flex justify-center'>Loading... Sunshine</h3>
-        <Image width={1000} alt='lebrone' height={700} src={'/lebrone.jpg'} className='flex justify-center m-auto' />
+        <Loading />
       </main>
     )
   }
